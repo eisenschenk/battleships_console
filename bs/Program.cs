@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bs.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,10 @@ namespace bs
     {
         static void Main(string[] args)
         {
+            Console.SetWindowSize(55,55);
+            GameboardController GameboardController = new GameboardController();
+            GameboardController.Render();
+            Console.ReadLine();
         }
     }
 }
